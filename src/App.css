@@ -1,0 +1,91 @@
+.academy-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.academy-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 2.25rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.academy-banner {
+  background: linear-gradient(135deg, #312e81, #4f46e5 65%, #7c3aed);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.banner-eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #c7d2fe;
+  margin-bottom: 0.45rem;
+}
+
+.banner-title {
+  margin: 0;
+  font-size: 2.15rem;
+  line-height: 1.15;
+  max-width: 18ch;
+}
+
+.banner-copy {
+  margin: 0.75rem 0 0;
+  max-width: 52ch;
+  color: #e0e7ff;
+}
+
+.banner-stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.stat-tile {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  min-width: 120px;
+}
+
+.stat-num {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #e0e7ff;
+}
+
+@media (max-width: 720px) {
+  .academy-main {
+    padding: 1.5rem 1rem 3rem;
+    gap: 2.5rem;
+  }
+
+  .academy-banner {
+    padding: 1.75rem;
+  }
+
+  .banner-title {
+    font-size: 1.7rem;
+  }
+}

@@ -1,0 +1,81 @@
+.instructors-header {
+  margin-bottom: 1.4rem;
+}
+
+.instructors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.instructor-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.4rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.instructor-top {
+  display: flex;
+  align-items: center;
+  gap: 0.95rem;
+}
+
+.instructor-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.instructor-name {
+  margin: 0;
+  font-size: 1.06rem;
+  font-weight: 700;
+}
+
+.instructor-role {
+  margin: 0.15rem 0 0.3rem;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+}
+
+.instructor-specialty {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--brand);
+  background: var(--brand-soft);
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+}
+
+.instructor-bio {
+  margin: 0;
+  font-size: 0.89rem;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.instructor-metrics {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.instructor-metrics strong {
+  color: var(--text-primary);
+}
+
+@media (max-width: 920px) {
+  .instructors-grid {
+    grid-template-columns: 1fr;
+  }
+}
